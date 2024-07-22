@@ -186,11 +186,9 @@ const Form = () => {
           />
         </form>
         <div className="next">
-          <button className="but oqi">
-            <a href="#">Ortga</a>
-          </button>
+          <button className="but oqi">Ortga</button>
           <button className="but kok" type="submit" onClick={handleSubmit}>
-            <a href="#">Keyingisi</a>
+            Keyingisi
           </button>
         </div>
       </div>

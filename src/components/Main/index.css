@@ -7,13 +7,11 @@
 .wrapper {
   max-width: 1440px;
   padding: 10px 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .for {
-  width: 702px;
-  margin: 60px auto;
+  max-width: 702px;
+  margin: 0 auto;
 }
 .for h3 {
   font-size: 32px;
@@ -87,12 +85,15 @@
 }
 .kok {
   background: #5361e4;
+  margin: 0px;
 }
 .kok:hover {
   background: #58e453;
   color: #000000;
 }
-.oqi a {
+.oqi {
+  margin: 0px;
+  background: #f8f8f8;
   color: #6e6d77;
 }
 .oqi:hover {
@@ -109,8 +110,26 @@
 }
 .messenger img {
   cursor: pointer;
+  margin: 0;
 }
 .error {
   color: red;
   font-size: 12px;
+}
+input {
+  color: #6e6d77;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+}
+select {
+  color: #6e6d77;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+}
+label {
+  color: #2a2941;
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 17.71px;
+  text-align: left;
 }

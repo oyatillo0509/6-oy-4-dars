@@ -1,0 +1,116 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.wrapper {
+  max-width: 1440px;
+  padding: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.for {
+  width: 702px;
+  margin: 60px auto;
+}
+.for h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 41.6px;
+}
+.for p {
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 20.8px;
+  margin-top: 16px;
+}
+.glav {
+  margin-left: 1px;
+  align-items: center;
+  display: flex;
+  gap: 14px;
+  margin-top: 32px;
+  width: 155px;
+  height: 84px;
+  margin-bottom: 20px;
+}
+.glav a {
+  text-decoration: none;
+}
+#komp_name,
+#email,
+#tel,
+#davlat,
+#city,
+#mfy,
+#ishchilar,
+#izoh {
+  width: 100%;
+  height: 52px;
+  margin-top: 8px;
+  border-radius: 16px;
+  border: 1px solid #e3e3e3;
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+#izoh {
+  height: 148px;
+}
+.pas {
+  font-size: 14px;
+  font-weight: 450;
+  line-height: 17.71px;
+  margin-top: 20px;
+}
+.for img {
+  margin-top: 8px;
+}
+.next {
+  display: flex;
+  justify-content: space-between;
+}
+.but {
+  width: 173.64px;
+  height: 60px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+}
+.but a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.24px;
+  color: #fff;
+}
+.kok {
+  background: #5361e4;
+}
+.kok:hover {
+  background: #58e453;
+  color: #000000;
+}
+.oqi a {
+  color: #6e6d77;
+}
+.oqi:hover {
+  background-color: #5361e4;
+}
+.oqi a:hover {
+  color: #ffffff;
+}
+.messenger {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.messenger img {
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-size: 12px;
+}

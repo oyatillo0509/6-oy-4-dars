@@ -84,6 +84,13 @@
   color: #fff;
 }
 .kok {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.24px;
+  letter-spacing: 1px;
+  text-align: left;
+
   background: #5361e4;
   margin: 0px;
 }

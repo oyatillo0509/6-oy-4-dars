@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import dow from "../../assets/imges/dow.svg";
 import Site from "../../assets/imges/Site.svg";
 import Insta from "../../assets/imges/insta.svg";
@@ -21,6 +21,7 @@ const Form = () => {
   });
 
   const [validationErrors, setValidationErrors] = useState({});
+  const fileInputRef = useRef(null);
 
   useEffect(() => {
     const savedData = JSON.parse(localStorage.getItem("formData"));
@@ -62,8 +63,20 @@ const Form = () => {
       setValidationErrors(errors);
     }
   };
+
   const mes_input = (e) => {
     const site = prompt("Link kriting...");
+  };
+
+  const yukla = (e) => {
+    fileInputRef.current.click();
+  };
+
+  const handleFileChange = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      console.log("Uploaded file:", file);
+    }
   };
 
   return (
@@ -73,7 +86,15 @@ const Form = () => {
         <p>Kompaniya haqidagi ma’lumotlarni kiriting</p>
         <div className="glav">
           <img src={dow} alt="avatar" />
-          <a href="#">Yuklash</a>
+          <a href="#" onClick={yukla}>
+            Yuklash
+          </a>
+          <input
+            type="file"
+            ref={fileInputRef}
+            style={{ display: "none" }}
+            onChange={handleFileChange}
+          />
         </div>
         <form onSubmit={handleSubmit}>
           <label htmlFor="komp_name">Kompaniya nomi</label> <br />
@@ -177,8 +198,7 @@ const Form = () => {
           <br />
           <label htmlFor="izoh">Izoh</label>
           <br />
-          <input
-            type="text"
+          <textarea
             placeholder="Kompaniya haqida izoh qoldiring"
             id="izoh"
             value={formData.izoh}
